@@ -11,3 +11,11 @@
             "agent",
         )
 `
+# Register Form
+`
+class RegisterForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ("username",)
+        field_classes = {'username': UsernameField}
+`
