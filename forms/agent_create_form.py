@@ -1,7 +1,9 @@
 from django import forms
-from app.model import YourAgent
+from .model import YourAgent
 
 # It is for create agent in the main agent folder
+
+
 class AgentAssignForm(forms.Form):
     agent = forms.ModelChoiceField(queryset=YourAgent.objects.none())
 
