@@ -25,4 +25,4 @@ class CategoryAssignView(LoginRequiredMixin, ListView):
         else:
             queryset = Category.objects.filter(
                 organiser=user.spy.organiser)
-        return
+        return queryset
